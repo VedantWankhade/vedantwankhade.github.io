@@ -1,0 +1,6 @@
+@import './catppuccin.css';
+
+body {
+    background-color: var(--ctp-mocha-base);
+    color: var(--ctp-mocha-text);
+}
