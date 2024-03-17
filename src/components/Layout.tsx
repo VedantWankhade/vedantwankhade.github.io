@@ -6,17 +6,17 @@ interface LayoutProps {
 }  
 
 const Layout: React.FC<LayoutProps> = ({ children }) => (
-  <>
-    <header>
+  <div className="ctp-mocha">
+    <header className="bg-ctp-mantle text-ctp-text">
       <Navbar />
     </header>
-    <main>
+    <main className="bg-ctp-mantle text-ctp-text">
       { children }
     </main>
-    <footer>
+    <footer className="bg-ctp-mantle text-ctp-text">
       <p>Footer</p>
     </footer>
-  </>
+  </div>
 )
   
 export default Layout
