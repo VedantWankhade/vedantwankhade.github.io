@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/home/Home'
 import Layout from './components/Layout'
 import Projects from './components/projects/Projects'
@@ -7,7 +7,7 @@ import Contact from './components/contact/Contact'
 import Skills from './components/skills/Skills'
 
 const App = () => (
-    <BrowserRouter>
+    <HashRouter>
       <Layout>
         <Routes>
           <Route path='/' Component={ Home } />
@@ -17,7 +17,7 @@ const App = () => (
           <Route path='/contact' Component={ Contact } />
         </Routes>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   )
 
 export default App
