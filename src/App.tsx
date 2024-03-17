@@ -1,7 +1,23 @@
-import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './components/home/Home'
+import Layout from './components/Layout'
+import Projects from './components/projects/Projects'
+import Experience from './components/experience/Experience'
+import Contact from './components/contact/Contact'
+import Skills from './components/skills/Skills'
 
-function App() {
-  return <h1>Hello, World!</h1>
-}
+const App = () => (
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path='/' Component={ Home } />
+          <Route path='/projects' Component={ Projects } />
+          <Route path='/skills' Component={ Skills } />
+          <Route path='/experience' Component={ Experience } />
+          <Route path='/contact' Component={ Contact } />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
+  )
 
 export default App
