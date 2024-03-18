@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom'
-import { Theme } from '../Layout'
+import { Theme } from '../../types.d'
 
 interface NavbarProps {
-    toggleTheme: (t: Theme) => void;
+    cycleTheme: (t: Theme) => void;
     theme: Theme
 }
 
-const Navbar: React.FC<NavbarProps> = ({ toggleTheme, theme }) => (
+const Navbar: React.FC<NavbarProps> = ({ cycleTheme, theme }) => (
     <nav className='flex justify-between'>
         <div>
-            <button onClick={() => toggleTheme(theme)}>Toggle</button>
+            <button onClick={() => cycleTheme(theme)}>Toggle</button>
         </div>
         <div>
         <ul className="hidden sm:flex justify-center gap-4">
