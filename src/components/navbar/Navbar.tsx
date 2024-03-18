@@ -19,6 +19,9 @@ const Navbar: React.FC<NavbarProps> = ({ toggleTheme, theme }) => (
             <li><Link to="/experience">Work Experience</Link></li>
             <li><Link to="/contact">Contact</Link></li>
         </ul>
+        <div className="sm:hidden">
+            Hamburger
+        </div>
         </div>
     </nav>
 )
