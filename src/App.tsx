@@ -1,6 +1,6 @@
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import Home from './components/home/Home'
-import Layout from './components/Layout'
+import { Layout } from './components/Layout'
 import Projects from './components/projects/Projects'
 import Experience from './components/experience/Experience'
 import Contact from './components/contact/Contact'

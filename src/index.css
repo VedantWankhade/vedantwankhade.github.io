@@ -2,8 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+@layer base {
+    @font-face {
+      font-family: 'Maple Mono';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/fonts/MapleMono-Bold.woff2) format(woff2);
+    }
+    @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(/fonts/Inter-Regular.woff2) format(woff2);
+      }
+  }
