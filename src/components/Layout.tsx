@@ -18,7 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     setTheme(t === Theme.MOCHA ? Theme.FRAPPE : t === Theme.FRAPPE ? Theme.LATTE : t === Theme.LATTE ? Theme.MOCHA : Theme.MOCHA);
   };
 
-  return <div className={`font-inter min-h-screen container flex flex-col justify-between max-w-full m-0 bg-ctp-base text-ctp-text ${theme}`}>
+  return <div className={`text-lg font-inter min-h-screen container flex flex-col justify-between max-w-full m-0 bg-ctp-base text-ctp-text ${theme}`}>
           <header className="p-6 bg-ctp-mantle">
             <Navbar cycleTheme={cycleTheme} theme={theme} />
           </header>

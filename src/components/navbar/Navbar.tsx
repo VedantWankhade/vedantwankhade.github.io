@@ -13,10 +13,10 @@ const Navbar: React.FC<NavbarProps> = ({ cycleTheme, theme }) => (
         </div>
         <div>
         <ul className="hidden sm:flex justify-center gap-4">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/">About</Link></li>
             <li><Link to="/skills">Skills</Link></li>
-            <li><Link to="/experience">Work Experience</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/experience">Experience</Link></li>
             <li><Link to="/contact">Contact</Link></li>
         </ul>
         <div className="sm:hidden">
