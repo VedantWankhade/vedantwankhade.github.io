@@ -17,6 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ cycleTheme, theme }) => (
             <li><Link to="/skills">Skills</Link></li>
             <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/experience">Experience</Link></li>
+            <li><Link to="/contributions">Contributions</Link></li>
             <li><Link to="/contact">Contact</Link></li>
         </ul>
         <div className="sm:hidden">

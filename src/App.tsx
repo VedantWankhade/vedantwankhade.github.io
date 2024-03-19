@@ -5,6 +5,7 @@ import Projects from './components/projects/Projects'
 import Experience from './components/experience/Experience'
 import Contact from './components/contact/Contact'
 import Skills from './components/skills/Skills'
+import Contributions from './components/contributions/Contributions'
 
 const App = () => (
     <HashRouter>
@@ -14,6 +15,7 @@ const App = () => (
           <Route path='/projects' Component={ Projects } />
           <Route path='/skills' Component={ Skills } />
           <Route path='/experience' Component={ Experience } />
+          <Route path='/contributions' Component={ Contributions } />
           <Route path='/contact' Component={ Contact } />
         </Routes>
       </Layout>

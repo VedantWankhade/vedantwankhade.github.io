@@ -1,2 +1,4 @@
-const Experience = () => <h1 className="py-2 font-maple text-3xl sm:text-6xl font-bold bg-gradient-to-r text-transparent from-ctp-lavender to-ctp-pink bg-clip-text">Experience</h1>
+import H1 from "../headers/H1"
+
+const Experience = () =>  <H1 label="Experience" styles="from-ctp-pink to-ctp-teal" />
 export default Experience

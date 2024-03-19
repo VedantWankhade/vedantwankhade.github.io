@@ -1,2 +1,4 @@
-const Contact = () => <h1 className="py-2 font-maple text-3xl sm:text-6xl font-bold bg-gradient-to-r text-transparent from-ctp-green to-ctp-peach bg-clip-text">Contact</h1>
+import H1 from "../headers/H1"
+
+const Contact = () =>  <H1 label="Contact" styles="from-ctp-mauve to-ctp-pink" />
 export default Contact
