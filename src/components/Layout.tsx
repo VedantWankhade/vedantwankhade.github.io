@@ -3,7 +3,10 @@ import Navbar from "./navbar/Navbar"
 import { Theme } from "../types.d"
 
 const getThemeFromStorage = () => {
-  // TODO))
+  const theme = localStorage.getItem("theme")
+  if (theme !== null) {
+    return theme as Theme
+  }
   return Theme.MOCHA
 }
 
@@ -15,7 +18,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [theme, setTheme] = useState(getThemeFromStorage());
 
   const cycleTheme = (t: Theme) => {
-    setTheme(t === Theme.MOCHA ? Theme.FRAPPE : t === Theme.FRAPPE ? Theme.LATTE : t === Theme.LATTE ? Theme.MOCHA : Theme.MOCHA);
+    const theme = t === Theme.MOCHA ? Theme.FRAPPE : t === Theme.FRAPPE ? Theme.LATTE : t === Theme.LATTE ? Theme.MOCHA : Theme.MOCHA
+    setTheme(theme);
+    localStorage.setItem("theme", theme)
   };
 
   return <div className={`text-lg font-inter min-h-screen container flex flex-col justify-between max-w-full m-0 bg-ctp-base text-ctp-text ${theme}`}>
