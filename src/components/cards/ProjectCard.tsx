@@ -1,19 +1,21 @@
 import H3 from "../headers/H3"
 
-interface SkillCardProps {
+interface ProjectCardProps {
     title: string,
-    styles: string
-    image: string
-    skills: string[]
+    styles: string,
+    image: string,
+    skills: string[],
+    url: string,
+    description: string,
 }
 
-const SkillCard: React.FC<SkillCardProps> = (props) => {
+const ProjectCard: React.FC<ProjectCardProps> = (props) => {
     return (
         <div className="bg-ctp-mantle w-full drop-shadow-xl rounded-lg p-2 sm:w-64 flex flex-col justify-between">
             <div className="flex justify-between">
                 <H3 label={props.title} styles={props.styles}></H3>
                 <div>
-                <i className={`ri-${props.image}-fill text-3xl ${props.styles}`}></i>
+                    <a href={props.url}><i className={`ri-${props.image}-fill text-3xl ${props.styles}`}></i></a>
                 </div>
             </div>
             <div>
@@ -21,8 +23,11 @@ const SkillCard: React.FC<SkillCardProps> = (props) => {
                     {props.skills.map((skill) => <li key={skill} className="font-bold bg-ctp-base px-2 rounded-full">{skill}</li>)}
                 </ul>
             </div>
+            <div>
+                <p>{props.description}</p>
+            </div>
         </div>
     )
 }
 
-export default SkillCard
+export default ProjectCard

@@ -8,13 +8,13 @@ const Skills = () => (
             <div>
                 <H1 label="What I use" styles="from-ctp-green to-ctp-teal animate-slide-right" />
             </div>
-            <div className="flex flex-wrap gap-4">
-                <SkillCard title="Backend" styles="from-ctp-rosewater to-ctp-blue" image="server" skills={["Go", "Java"]} />
-                <SkillCard title="Frontend" styles="from-ctp-peach to-ctp-red" image="smartphone" skills={["React", "TypeScript", "TailwindCSS"]} />
-                <SkillCard title="Patterns" styles="from-ctp-red to-ctp-green" image="git-branch" skills={["REST", "gRPC"]} />
-                <SkillCard title="Database" styles="from-ctp-yellow to-ctp-pink" image="database-2" skills={["MySQL", "MongoDB"]} />
-                <SkillCard title="Tools" styles="from-ctp-red to-ctp-blue" image="hammer" skills={["Git"]} />
-                <SkillCard title="Other" styles="from-ctp-teal to-ctp-green" image="terminal-box" skills={["Linux", "Tmux", "NixOS"]} />
+            <div className="flex flex-wrap gap-4 animate-slide-up">
+                <SkillCard title="Backend" styles="text-ctp-blue" image="server" skills={["Go", "Java"]} />
+                <SkillCard title="Frontend" styles="text-ctp-red" image="smartphone" skills={["React", "TypeScript", "TailwindCSS"]} />
+                <SkillCard title="Patterns" styles="text-ctp-green" image="git-branch" skills={["REST", "gRPC"]} />
+                <SkillCard title="Database" styles="text-ctp-pink" image="database-2" skills={["MySQL", "MongoDB"]} />
+                <SkillCard title="Tools" styles="text-ctp-peach" image="hammer" skills={["Git"]} />
+                <SkillCard title="Other" styles="text-ctp-sky" image="terminal-box" skills={["Linux", "Tmux", "NixOS"]} />
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}
