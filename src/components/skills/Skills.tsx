@@ -9,12 +9,12 @@ const Skills = () => (
                 <H1 label="What I use" styles="from-ctp-green to-ctp-teal animate-slide-right" />
             </div>
             <div className="flex flex-wrap gap-4 animate-slide-up">
-                <SkillCard title="Backend" styles="text-ctp-blue" image="server" skills={["Go", "Java"]} />
-                <SkillCard title="Frontend" styles="text-ctp-red" image="smartphone" skills={["React", "TypeScript", "TailwindCSS"]} />
-                <SkillCard title="Patterns" styles="text-ctp-green" image="git-branch" skills={["REST", "gRPC"]} />
-                <SkillCard title="Database" styles="text-ctp-pink" image="database-2" skills={["MySQL", "MongoDB"]} />
-                <SkillCard title="Tools" styles="text-ctp-peach" image="hammer" skills={["Git"]} />
-                <SkillCard title="Other" styles="text-ctp-sky" image="terminal-box" skills={["Linux", "Tmux", "NixOS"]} />
+                <SkillCard borderColor="border-ctp-blue" title="Backend" styles="text-ctp-blue" image="server" skills={["Go", "Java"]} />
+                <SkillCard borderColor="border-ctp-red" title="Frontend" styles="text-ctp-red" image="smartphone" skills={["React", "TypeScript", "TailwindCSS"]} />
+                <SkillCard borderColor="border-ctp-green" title="Patterns" styles="text-ctp-green" image="git-branch" skills={["REST", "gRPC"]} />
+                <SkillCard borderColor="border-ctp-pink" title="Database" styles="text-ctp-pink" image="database-2" skills={["MySQL", "MongoDB"]} />
+                <SkillCard borderColor="border-ctp-peach" title="Tools" styles="text-ctp-peach" image="hammer" skills={["Git"]} />
+                <SkillCard borderColor="border-ctp-sky" title="Other" styles="text-ctp-sky" image="terminal-box" skills={["Linux", "Tmux", "NixOS"]} />
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}

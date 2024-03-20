@@ -5,6 +5,7 @@ interface SkillCardProps {
     styles: string
     image: string
     skills: string[]
+    borderColor: string
 }
 
 const SkillCard: React.FC<SkillCardProps> = (props) => {
@@ -18,7 +19,7 @@ const SkillCard: React.FC<SkillCardProps> = (props) => {
             </div>
             <div>
                 <ul className="flex flex-wrap gap-3">
-                    {props.skills.map((skill) => <li key={skill} className="font-bold bg-ctp-base px-2 rounded-full">{skill}</li>)}
+                    {props.skills.map((skill) => <li key={skill} className={`font-bold bg-ctp-base px-2 rounded-full border-2 ${props.borderColor}`}>{skill}</li>)}
                 </ul>
             </div>
         </div>

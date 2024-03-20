@@ -7,6 +7,7 @@ interface ProjectCardProps {
     skills: string[],
     url: string,
     description: string,
+    borderColor: string
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = (props) => {
@@ -20,7 +21,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
             </div>
             <div>
                 <ul className="flex flex-wrap gap-3">
-                    {props.skills.map((skill) => <li key={skill} className="font-bold bg-ctp-base px-2 rounded-full">{skill}</li>)}
+                    {props.skills.map((skill) => <li key={skill} className={`font-bold bg-ctp-base px-2 rounded-full border-2 ${props.borderColor}`}>{skill}</li>)}
                 </ul>
             </div>
             <div>

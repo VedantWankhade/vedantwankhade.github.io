@@ -9,11 +9,11 @@ const Projects = () => (
                 <H1 label="Projects" styles="from-ctp-blue to-ctp-red animate-slide-right" />
             </div>
             <div className="flex flex-wrap gap-4 animate-slide-up">
-                <ProjectCard title="Project 1" styles="text-ctp-sky" description="llorem ipsumlorem ipsumolorem ipsumrem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
-                <ProjectCard title="Project 2" styles="text-ctp-sky" description="lorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
-                <ProjectCard title="Project 3" styles="text-ctp-sky" description="lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
-                <ProjectCard title="Project 4" styles="text-ctp-sky" description="lorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
-                <ProjectCard title="Project 5" styles="text-ctp-sky" description="lorem ipsumlorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
+                <ProjectCard borderColor="border-ctp-yellow" title="Project 1" styles="text-ctp-yello" description="llorem ipsumlorem ipsumolorem ipsumrem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
+                <ProjectCard borderColor="border-ctp-red" title="Project 2" styles="text-ctp-red" description="lorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
+                <ProjectCard borderColor="border-ctp-blue" title="Project 3" styles="text-ctp-blue" description="lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
+                <ProjectCard borderColor="border-ctp-mauve" title="Project 4" styles="text-ctp-mauve" description="lorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
+                <ProjectCard borderColor="border-ctp-green" title="Project 5" styles="text-ctp-green" description="lorem ipsumlorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}
