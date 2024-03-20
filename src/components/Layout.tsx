@@ -19,7 +19,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   };
 
   return <div className={`text-lg font-inter min-h-screen container flex flex-col justify-between max-w-full m-0 bg-ctp-base text-ctp-text ${theme}`}>
-          <header className="p-6 bg-ctp-mantle">
+          <header className="p-6 bg-ctp-mantle animate-slide-down">
             <Navbar cycleTheme={cycleTheme} theme={theme} />
           </header>
           <main className="py-6 px-6 lg:px-16 xl:px-96 flex justify-center sm:justify-between gap-6">
