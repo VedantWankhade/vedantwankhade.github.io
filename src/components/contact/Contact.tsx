@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import Button from "../button/Button"
 import H1 from "../headers/H1"
 import H2 from "../headers/H2"

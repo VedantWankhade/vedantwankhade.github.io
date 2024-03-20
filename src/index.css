@@ -21,7 +21,6 @@
     }
 }
 
-
 @keyframes slideRight {
   0% {
       transform: translateX(-40%);
