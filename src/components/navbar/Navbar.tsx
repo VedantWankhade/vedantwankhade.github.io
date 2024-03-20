@@ -9,7 +9,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ cycleTheme, theme }) => (
     <nav className='flex justify-between'>
         <div>
-            <button onClick={() => cycleTheme(theme)}>Toggle</button>
+            <button onClick={() => cycleTheme(theme)}><i className={`ri-contrast-fill text-3xl`}></i></button>
         </div>
         <div>
         <ul className="hidden sm:flex justify-center gap-4">
