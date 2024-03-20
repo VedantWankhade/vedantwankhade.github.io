@@ -11,10 +11,41 @@
       src: url(/fonts/MapleMono-Bold.woff2) format(woff2);
     }
     @font-face {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(/fonts/Inter-Regular.woff2) format(woff2);
-      }
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(/fonts/Inter-Regular.woff2) format(woff2);
+    }
+}
+
+
+@keyframes slideRight {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
   }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.animate-slide-right {
+  animation: slideRight 0.5s ease-out;
+}
+
+@keyframes slideLeft {
+  0% {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.5s ease-out;
+}

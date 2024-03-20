@@ -12,7 +12,6 @@ export default {
     require("@catppuccin/tailwindcss")({
       prefix: "ctp",
       defaultFlavour: "mocha",
-    }),
+    })
   ],
 }
-
