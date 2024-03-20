@@ -18,7 +18,7 @@ const About = () => (
             <div className="max-w-sm sm:max-w-xl">
                 <p>{content.intro}</p>
             </div>
-            <div className="mt-2 flex flex-wrap gap-x-1 gap-y-4">
+            <div className="mt-2 flex flex-wrap gap-x gap-y-4">
                 <Link to={'/contact'}><Button label='Contact Me' styles={"from-ctp-mauve to-ctp-pink"} /></Link>
                 <Link to={'/projects'}><Button label='View My Work' styles={"from-ctp-peach to-ctp-red"} /></Link>
                 <Link to={'/'}><Button label='Download My Resume' styles={"from-ctp-green to-ctp-teal"} /></Link>
