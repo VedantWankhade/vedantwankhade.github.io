@@ -4,17 +4,17 @@ import H2 from "../headers/H2"
 
 const Skills = () => (
     <>
-        <div className="flex flex-col gap-2 justify-center">
+        <div className="flex flex-col gap-2">
             <div>
                 <H1 label="What I use" styles="from-ctp-green to-ctp-teal animate-slide-right" />
             </div>
             <div className="flex flex-wrap gap-4">
-                <SkillCard title="Backend" titleStyles="from-ctp-rosewater to-ctp-blue" image= "image" skills={["Go", "Java"]} />
-                <SkillCard title="Frontend" titleStyles="from-ctp-peach to-ctp-red" image= "image" skills={["React", "TypeScript", "TailwindCSS"]} />
-                <SkillCard title="Patterns" titleStyles="from-ctp-red to-ctp-green" image= "image" skills={["REST", "gRPC"]} />
-                <SkillCard title="Database" titleStyles="from-ctp-yellow to-ctp-pink" image= "image" skills={["MySQL", "MongoDB"]} />
-                <SkillCard title="Tools" titleStyles="from-ctp-red to-ctp-blue" image= "image" skills={["Git"]} />
-                <SkillCard title="Other" titleStyles="from-ctp-teal to-ctp-green" image= "image" skills={["Linux", "Tmux", "NixOS"]} />
+                <SkillCard title="Backend" styles="from-ctp-rosewater to-ctp-blue" image="server" skills={["Go", "Java"]} />
+                <SkillCard title="Frontend" styles="from-ctp-peach to-ctp-red" image="smartphone" skills={["React", "TypeScript", "TailwindCSS"]} />
+                <SkillCard title="Patterns" styles="from-ctp-red to-ctp-green" image="git-branch" skills={["REST", "gRPC"]} />
+                <SkillCard title="Database" styles="from-ctp-yellow to-ctp-pink" image="database-2" skills={["MySQL", "MongoDB"]} />
+                <SkillCard title="Tools" styles="from-ctp-red to-ctp-blue" image="hammer" skills={["Git"]} />
+                <SkillCard title="Other" styles="from-ctp-teal to-ctp-green" image="terminal-box" skills={["Linux", "Tmux", "NixOS"]} />
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}
