@@ -22,6 +22,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <header className="p-6 bg-ctp-mantle animate-slide-down">
             <Navbar cycleTheme={cycleTheme} theme={theme} />
           </header>
+          {/* <div className="hidden sm:block">
+            <p className="text-2xl font-maple"> you@github.io# ~ /<span>vedant</span><span>wankhade</span></p>
+          </div> */}
           <main className="py-6 px-6 lg:px-16 xl:px-96 flex justify-center sm:justify-between gap-6">
             { children }
           </main>
