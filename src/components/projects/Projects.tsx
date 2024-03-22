@@ -12,7 +12,7 @@ const Projects = () => (
             <div className="flex flex-wrap gap-4 animate-slide-up">
                 {
                     content.projects.map(project => (
-                        <ProjectCard borderColor={`border-ctp-${project.accent}`} title={project.title} styles={`text-ctp-${project.accent}`} description="lorem ipsumlorem ipsum" url={project.url} image={project.image} skills={project.skills} />
+                        <ProjectCard key={project.title} borderColor={`border-ctp-${project.accent}`} title={project.title} styles={`text-ctp-${project.accent}`} description="lorem ipsumlorem ipsum" url={project.url} image={project.image} skills={project.skills} />
                     ))
                 }
             </div>

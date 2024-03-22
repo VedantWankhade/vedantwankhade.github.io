@@ -14,7 +14,7 @@ const Contributions = () =>  (
                 <ProjectCard borderColor="border-ctp-green" title="KDE PLasma (Discover)" styles="text-ctp-green" description="lorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Bugfix", "QT", "QML"]} />  */}
                 {
                     content.contributions.map(contrib => (
-                        <ProjectCard borderColor={`border-ctp-${contrib.accent}`} title={contrib.title} styles={`text-ctp-${contrib.accent}`} description={contrib.description} url={contrib.url} image={contrib.image} skills={contrib.skills} />
+                        <ProjectCard key={contrib.title} borderColor={`border-ctp-${contrib.accent}`} title={contrib.title} styles={`text-ctp-${contrib.accent}`} description={contrib.description} url={contrib.url} image={contrib.image} skills={contrib.skills} />
                     ))
                 }
             </div>

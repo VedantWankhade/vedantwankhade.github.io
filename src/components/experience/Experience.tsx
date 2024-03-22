@@ -1,28 +1,7 @@
-import { Role } from "../../types"
 import ExperienceCard from "../cards/ExperienceCard"
 import H1 from "../headers/H1"
 import H2 from "../headers/H2"
-
-const ctsroles: Role[] = [
-    {
-        name: "Junior Software Engineer",
-        description: "Did some stuff",
-        year: "2024"
-    },
-    {
-        name: "Intern",
-        description: "Did some stuffDid some stuffDid some stuffDid some stuff",
-        year: "2021"
-    }
-]
-
-const clg: Role[] = [
-    {
-        name: "Student",
-        description: "Did nothing",
-        year: "2021"
-    }
-]
+import content from "../../content"
 
 const Experience = () => (
     <>
@@ -31,8 +10,13 @@ const Experience = () => (
             <H1 label="Experience" styles="from-ctp-pink to-ctp-teal animate-slide-right" />
             </div>
             <div className="flex flex-col gap-4 animate-slide-up">
-                <ExperienceCard borderColor="border-ctp-yellow" current org="Cognizant" roles={ctsroles} styles="text-ctp-yellow" image="building" skills={["Linux", "Tmux", "NixOS"]} />
-                <ExperienceCard borderColor="border-ctp-yellow" org="Prof Ram Meghe Insitute of Technology" roles={clg} styles="text-ctp-blue" image="graduation-cap" skills={["Linux", "Tmux", "NixOS"]} />
+                {/* <ExperienceCard borderColor="border-ctp-yellow" current org="Cognizant" roles={ctsroles} styles="text-ctp-yellow" image="building" skills={["Linux", "Tmux", "NixOS"]} />
+                <ExperienceCard borderColor="border-ctp-yellow" org="Prof Ram Meghe Insitute of Technology" roles={clg} styles="text-ctp-blue" image="graduation-cap" skills={["Linux", "Tmux", "NixOS"]} /> */}
+                {
+                    content.experiences.map(experience => (
+                        <ExperienceCard key={experience.org} borderColor={`border-ctp-${experience.accent}`} org={experience.org} roles={experience.roles} current={experience.current} styles={`text-ctp-${experience.accent}`} image={experience.image} />
+                    ))
+                }
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}

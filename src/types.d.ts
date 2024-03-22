@@ -7,7 +7,8 @@ enum Theme {
 interface Role {
     name: string,
     description: string
-    year: string
+    year: string,
+    skills: string[]
 }
 
 interface Skill {
@@ -26,4 +27,12 @@ interface Project {
     url: string
 }
 
-export { Theme, Role, Skill, Project }
+interface Experience {
+    roles: Role[],
+    org: string,
+    current?: boolean,
+    image: string,
+    accent: string,
+}
+
+export { Theme, Role, Skill, Project, Experience }

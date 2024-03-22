@@ -6,7 +6,6 @@ interface ExperienceCardProps {
     org: string,
     styles: string,
     image: string,
-    skills: string[],
     borderColor: string,
     roles: Role[],
     current?: boolean
@@ -21,17 +20,20 @@ const ProjectCard: React.FC<ExperienceCardProps> = (props) => {
                     <i className={`ri-${props.image}-fill text-3xl ${props.styles}`}></i>
                 </div>
             </div>
-            {/* <div>
-                <ul className="flex flex-wrap gap-3">
-                    {props.skills.map((skill) => <li key={skill} className={`font-bold bg-ctp-base px-2 rounded-full border-2 ${props.borderColor}`}>{skill}</li>)}
-                </ul>
-            </div> */}
+            
             <div>
                 {props.roles.map(role => (
-                    <div key={role.name+'@'+props.org} className="mt-2" >
-                        <H4 label={role.name} styles={props.styles}></H4>
-                        <p>{role.description}</p>
-                        <p>{role.year}</p>
+                    <div key={role.name+'@'+props.org}>
+                        <div className="mt-2" >
+                            <H4 label={role.name} styles={props.styles}></H4>
+                            <p>{role.description}</p>
+                            <p>{role.year}</p>
+                        </div>
+                        {/* <div>
+                            <ul className="flex flex-wrap gap-3">
+                                {role.skills.map((skill) => <li key={skill} className={`font-bold bg-ctp-base px-2 rounded-full border-2 ${props.borderColor}`}>{skill}</li>)}
+                            </ul>
+                        </div> */}
                     </div>
                 ))}
             </div>

@@ -1,4 +1,4 @@
-import { Project, Skill } from "./types"
+import { Experience, Project, Skill } from "./types"
 
 const title = "Software Engineer";
 const intro = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto delectus sunt quidem hic dolorem totam quam odit provident aliquam laudantium accusantium, nihil minus eaque, similique aspernatur, iure dolorum perferendis? Ratione?";
@@ -80,6 +80,43 @@ const contributions: Project[] = [
     },
 ]
 
+const experiences: Experience[] = [
+    {
+        org: "Cognizant",
+        current: true,
+        accent: "blue",
+        image: "building",
+        roles: [
+            {
+                name: "Junior Software Engineer",
+                description: "Did some stuff",
+                year: "2024",
+                skills: ["Go", "Java", "Linux", "Tmux", "NixOS"]
+            },
+            {
+                name: "Intern",
+                description: "Did some stuffDid some stuffDid some stuffDid some stuff",
+                year: "2021",
+                skills: ["Go", "Java"]
+            }
+        ]
+    },
+    {
+        org: "PRMITR",
+        // current: true,
+        accent: "red",
+        image: "graduation-cap",
+        roles: [
+            {
+                name: "Studenbt",
+                description: "Did nothing",
+                year: "2024",
+                skills: ["Go", "Java", "Linux", "Tmux", "NixOS"]
+            },
+        ]
+    }
+]
+
 export default {
-    title, intro, skills, projects, contributions
+    title, intro, skills, projects, contributions, experiences
 }
