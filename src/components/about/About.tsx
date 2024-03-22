@@ -13,7 +13,7 @@ const About = () => (
             </div>
             <div>
                 <p>I am a</p>
-                <H1 label="Software Engineer" styles="from-ctp-red to-ctp-yellow animate-slide-right" />
+                <H1 label={content.title} styles="from-ctp-red to-ctp-yellow animate-slide-right" />
             </div>
             <div className="max-w-sm sm:max-w-xl">
                 <p>{content.intro}</p>

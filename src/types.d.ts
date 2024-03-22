@@ -10,4 +10,11 @@ interface Role {
     year: string
 }
 
-export { Theme, Role }
+interface Skill {
+    title: string,
+    image: string,
+    skills: string[],
+    accent: string
+}
+
+export { Theme, Role, Skill }

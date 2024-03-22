@@ -1,6 +1,7 @@
 import SkillCard from "../cards/SkillCard"
 import H1 from "../headers/H1"
 import H2 from "../headers/H2"
+import content from "../../content"
 
 const Skills = () => (
     <>
@@ -9,12 +10,11 @@ const Skills = () => (
                 <H1 label="What I use" styles="from-ctp-green to-ctp-teal animate-slide-right" />
             </div>
             <div className="flex flex-wrap gap-4 animate-slide-up">
-                <SkillCard borderColor="border-ctp-blue" title="Backend" styles="text-ctp-blue" image="server" skills={["Go", "Java"]} />
-                <SkillCard borderColor="border-ctp-red" title="Frontend" styles="text-ctp-red" image="smartphone" skills={["React", "TypeScript", "TailwindCSS"]} />
-                <SkillCard borderColor="border-ctp-green" title="Patterns" styles="text-ctp-green" image="git-branch" skills={["REST", "gRPC"]} />
-                <SkillCard borderColor="border-ctp-pink" title="Database" styles="text-ctp-pink" image="database-2" skills={["MySQL", "MongoDB"]} />
-                <SkillCard borderColor="border-ctp-peach" title="Tools" styles="text-ctp-peach" image="hammer" skills={["Git"]} />
-                <SkillCard borderColor="border-ctp-sky" title="Other" styles="text-ctp-sky" image="terminal-box" skills={["Linux", "Tmux", "NixOS"]} />
+                {
+                    content.skills.map(skill => (
+                        <SkillCard key={skill.title} borderColor={`border-ctp-${skill.accent}`} title={skill.title} styles={`text-ctp-${skill.accent}`} image={skill.image} skills={skill.skills} />
+                    ))
+                }
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}
