@@ -3,7 +3,7 @@ import ExperienceCard from "../cards/ExperienceCard"
 import H1 from "../headers/H1"
 import H2 from "../headers/H2"
 
-const roles: Role[] = [
+const ctsroles: Role[] = [
     {
         name: "Junior Software Engineer",
         description: "Did some stuff",
@@ -11,7 +11,15 @@ const roles: Role[] = [
     },
     {
         name: "Intern",
-        description: "Did some stuff",
+        description: "Did some stuffDid some stuffDid some stuffDid some stuff",
+        year: "2021"
+    }
+]
+
+const clg: Role[] = [
+    {
+        name: "Student",
+        description: "Did nothing",
         year: "2021"
     }
 ]
@@ -22,9 +30,9 @@ const Experience = () => (
             <div>
             <H1 label="Experience" styles="from-ctp-pink to-ctp-teal animate-slide-right" />
             </div>
-            <div className="flex flex-wrap gap-4 animate-slide-up">
-                <ExperienceCard borderColor="border-ctp-yellow" current org="Cognizant" roles={roles} styles="text-ctp-yellow" image="building" skills={["Linux", "Tmux", "NixOS"]} />
-                <ExperienceCard borderColor="border-ctp-yellow" org="Prof Ram Meghe Insitute of Technology" roles={roles} styles="text-ctp-blue" image="graduation-cap" skills={["Linux", "Tmux", "NixOS"]} />
+            <div className="flex flex-col gap-4 animate-slide-up">
+                <ExperienceCard borderColor="border-ctp-yellow" current org="Cognizant" roles={ctsroles} styles="text-ctp-yellow" image="building" skills={["Linux", "Tmux", "NixOS"]} />
+                <ExperienceCard borderColor="border-ctp-yellow" org="Prof Ram Meghe Insitute of Technology" roles={clg} styles="text-ctp-blue" image="graduation-cap" skills={["Linux", "Tmux", "NixOS"]} />
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}
