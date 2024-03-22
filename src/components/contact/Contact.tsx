@@ -15,7 +15,7 @@ const Contact = () =>  (
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}
-        <div className="hidden sm:block border-l-2 pl-10 md:pl-28 h-min">
+        <div className="hidden sm:block border-l-2 border-l-ctp-pink pl-10 md:pl-28 h-min">
             <p>Or if you are old school</p>
            <ul>
             <li><H2 label="vedantwankhade17@gmail.com" styles="from-ctp-mauve to-ctp-pink animate-slide-left"></H2></li>

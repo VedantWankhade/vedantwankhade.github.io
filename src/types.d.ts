@@ -4,4 +4,10 @@ enum Theme {
     FRAPPE = "ctp-frappe",
 }
 
-export { Theme }
+interface Role {
+    name: string,
+    description: string
+    year: string
+}
+
+export { Theme, Role }

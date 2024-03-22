@@ -17,7 +17,7 @@ const Projects = () => (
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}
-        <div className="hidden sm:block border-l-2 pl-10 md:pl-28 h-min">
+        <div className="hidden sm:block border-l-2 border-l-ctp-red pl-10 md:pl-28 h-min">
             <p>I have made</p>
            <ul>
             <li><H2 label="Distributed backends" styles="from-ctp-mauve to-ctp-pink animate-slide-left"></H2></li>
