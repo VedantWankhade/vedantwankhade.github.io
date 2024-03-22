@@ -33,7 +33,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   };
 
   return <div className={`text-lg font-inter min-h-screen container flex flex-col justify-between max-w-full m-0 bg-ctp-base text-ctp-text ${theme}`}>
-          <header className="p-6 bg-ctp-mantle animate-slide-down">
+          <header className="p-6 bg-ctp-mantle animate-slide-down sticky top-0 z-10">
             <Navbar cycleTheme={cycleTheme} theme={theme} toggleMenu={toggleMenu} menuIcon={menuIcon} slideMenuFlag={slideMenuFlag} />
           </header>
           {/* <div className="hidden sm:block">
