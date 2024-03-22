@@ -1,6 +1,7 @@
 import H1 from "../headers/H1"
 import H2 from "../headers/H2"
 import ProjectCard from "../cards/ProjectCard"
+import content from "../../content"
 
 const Contributions = () =>  (
     <>
@@ -9,8 +10,13 @@ const Contributions = () =>  (
                 <H1 label="Contributions" styles="from-ctp-blue to-ctp-yellow animate-slide-right" />
             </div>
             <div className="flex flex-wrap gap-4 animate-slide-up">
-                <ProjectCard borderColor="border-ctp-red" title="tgpt" styles="text-ctp-red" description="llorem ipsumlorem ipsumolorem ipsumrem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Go", "Bugfix"]} />
-                <ProjectCard borderColor="border-ctp-green" title="KDE PLasma (Discover)" styles="text-ctp-green" description="lorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Bugfix", "QT", "QML"]} /> 
+                {/* <ProjectCard borderColor="border-ctp-red" title="tgpt" styles="text-ctp-red" description="llorem ipsumlorem ipsumolorem ipsumrem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Go", "Bugfix"]} />
+                <ProjectCard borderColor="border-ctp-green" title="KDE PLasma (Discover)" styles="text-ctp-green" description="lorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Bugfix", "QT", "QML"]} />  */}
+                {
+                    content.contributions.map(contrib => (
+                        <ProjectCard borderColor={`border-ctp-${contrib.accent}`} title={contrib.title} styles={`text-ctp-${contrib.accent}`} description={contrib.description} url={contrib.url} image={contrib.image} skills={contrib.skills} />
+                    ))
+                }
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}

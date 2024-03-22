@@ -17,4 +17,13 @@ interface Skill {
     accent: string
 }
 
-export { Theme, Role, Skill }
+interface Project {
+    title: string,
+    image: string,
+    skills: string[],
+    accent: string,
+    description: string,
+    url: string
+}
+
+export { Theme, Role, Skill, Project }

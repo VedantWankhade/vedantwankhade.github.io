@@ -1,6 +1,7 @@
 import ProjectCard from "../cards/ProjectCard"
 import H1 from "../headers/H1"
 import H2 from "../headers/H2"
+import content from "../../content"
 
 const Projects = () => (
     <>
@@ -9,11 +10,11 @@ const Projects = () => (
                 <H1 label="Projects" styles="from-ctp-blue to-ctp-red animate-slide-right" />
             </div>
             <div className="flex flex-wrap gap-4 animate-slide-up">
-                <ProjectCard borderColor="border-ctp-yellow" title="Project 1" styles="text-ctp-yello" description="llorem ipsumlorem ipsumolorem ipsumrem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
-                <ProjectCard borderColor="border-ctp-red" title="Project 2" styles="text-ctp-red" description="lorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
-                <ProjectCard borderColor="border-ctp-blue" title="Project 3" styles="text-ctp-blue" description="lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
-                <ProjectCard borderColor="border-ctp-mauve" title="Project 4" styles="text-ctp-mauve" description="lorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
-                <ProjectCard borderColor="border-ctp-green" title="Project 5" styles="text-ctp-green" description="lorem ipsumlorem ipsumlorem ipsumlorem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Linux", "Tmux", "NixOS"]} />
+                {
+                    content.projects.map(project => (
+                        <ProjectCard borderColor={`border-ctp-${project.accent}`} title={project.title} styles={`text-ctp-${project.accent}`} description="lorem ipsumlorem ipsum" url={project.url} image={project.image} skills={project.skills} />
+                    ))
+                }
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}

@@ -1,4 +1,4 @@
-import { Skill } from "./types"
+import { Project, Skill } from "./types"
 
 const title = "Software Engineer";
 const intro = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto delectus sunt quidem hic dolorem totam quam odit provident aliquam laudantium accusantium, nihil minus eaque, similique aspernatur, iure dolorum perferendis? Ratione?";
@@ -42,6 +42,44 @@ const skills: Skill[] = [
     },
 ]
 
+const projects: Project[] = [
+    {
+        title: "Project 1",
+        skills: ["Go", "Java"],
+        image: "github",
+        accent: "blue",
+        description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        url: "https://github.com/vedantwankhade/",
+    },
+    {
+        title: "Project 2",
+        skills: ["React", "Tailwind"],
+        image: "github",
+        accent: "peach",
+        description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        url: "https://github.com/vedantwankhade/",
+    },
+]
+
+const contributions: Project[] = [
+    {
+        title: "tgpt",
+        skills: ["Go", "CLI", "AI"],
+        image: "github",
+        accent: "blue",
+        description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        url: "https://github.com/vedantwankhade/",
+    },
+    {
+        title: "KDE Plasma",
+        skills: ["QML", "QT", "Linux"],
+        image: "github",
+        accent: "peach",
+        description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+        url: "https://github.com/vedantwankhade/",
+    },
+]
+
 export default {
-    title, intro, skills
+    title, intro, skills, projects, contributions
 }
