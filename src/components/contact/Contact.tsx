@@ -9,9 +9,9 @@ const Contact = () =>  (
                 <H1 label="Contact me" styles="from-ctp-mauve to-ctp-red animate-slide-right" />
             </div>
             <div className="mt-2 flex flex-wrap gap-x gap-y-4 animate-slide-up">
-                <a href="#"><Button label='LinkedIn' styles={"from-ctp-mauve to-ctp-pink"} icon="linkedin" /></a>
-                <a href="#"><Button label='GitHub' styles={"from-ctp-peach to-ctp-red"} icon="github" /></a>
-                <a href="#"><Button label='Email' styles={"from-ctp-green to-ctp-teal"} icon="mail" /></a>
+                <a href="#"><Button label='LinkedIn' styles={"from-ctp-peach to-ctp-red"} icon="linkedin" /></a>
+                <a href="#"><Button label='GitHub' styles={"from-ctp-pink to-ctp-mauve"} icon="github" /></a>
+                <a href="#"><Button label='Email' styles={"from-ctp-teal to-ctp-green"} icon="mail" /></a>
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}
