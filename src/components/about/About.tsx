@@ -21,7 +21,7 @@ const About = () => (
             <div className="mt-2 flex flex-wrap gap-x gap-y-4 animate-slide-up">
                 <Link to={'/contact'}><Button label='Contact Me' styles={"from-ctp-peach to-ctp-red"} icon="mail" /></Link>
                 <Link to={'/projects'}><Button label='View My Work' styles={"from-ctp-pink to-ctp-mauve"} icon="code-s-slash" /></Link>
-                <a href={about.resumeLink}><Button label='Download My Resume' styles={"from-ctp-teal to-ctp-green"} icon="profile" /></a>
+                <a href={about.resumeLink} target='_blank'><Button label='My Resume' styles={"from-ctp-teal to-ctp-green"} icon="profile" /></a>
             </div>
         </div>
         <div className="hidden sm:block bg-gradient-to-r from-ctp-peach to-ctp-red h-min p-0 rounded-full animate-slide-left">

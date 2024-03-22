@@ -10,9 +10,9 @@ const Contact = () =>  (
                 <H1 label={contact.title} styles="from-ctp-mauve to-ctp-red animate-slide-right" />
             </div>
             <div className="mt-2 flex flex-wrap gap-x gap-y-4 animate-slide-up">
-                <a href={contact.links.linkedin}><Button label='LinkedIn' styles={"from-ctp-peach to-ctp-red"} icon="linkedin" /></a>
-                <a href={contact.links.github}><Button label='GitHub' styles={"from-ctp-pink to-ctp-mauve"} icon="github" /></a>
-                <a href={contact.links.email}><Button label='Email' styles={"from-ctp-teal to-ctp-green"} icon="mail" /></a>
+                <a target="_blank" href={contact.links.linkedin}><Button label='LinkedIn' styles={"from-ctp-peach to-ctp-red"} icon="linkedin" /></a>
+                <a target="_blank" href={contact.links.github}><Button label='GitHub' styles={"from-ctp-pink to-ctp-mauve"} icon="github" /></a>
+                <a href={`mailto:${contact.links.email}`}><Button label='Email' styles={"from-ctp-teal to-ctp-green"} icon="mail" /></a>
             </div>
         </div>
         {/* <div><p>Separator</p></div> */}

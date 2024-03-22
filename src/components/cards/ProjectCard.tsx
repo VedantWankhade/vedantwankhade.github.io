@@ -16,7 +16,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
             <div className="flex justify-between">
                 <H3 label={props.title} styles={props.styles}></H3>
                 <div>
-                    <a href={props.url}><i className={`ri-${props.image}-fill text-3xl ${props.styles}`}></i></a>
+                    <a href={props.url} target="_blank"><i className={`ri-${props.image}-fill text-3xl ${props.styles}`}></i></a>
                 </div>
             </div>
             <div>
