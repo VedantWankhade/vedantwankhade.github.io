@@ -6,8 +6,13 @@ export default {
     fontFamily: {
       'maple': ["Maple Mono"],
       'inter': ["Inter"]
-    }
+    },
   },
+  safelist: [
+    {
+      pattern: /bg-ctp-*|text-ctp-*|border-ctp-*|from-ctp-*|to-ctp-*/,
+    }
+  ],
   plugins: [
     require("@catppuccin/tailwindcss")({
       prefix: "ctp",

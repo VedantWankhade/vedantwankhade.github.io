@@ -201,11 +201,11 @@ const contact = {
     sideTitles: [
         {
             title: links.email,
-            gradient: "from-ctp-mauve to-ctp-pink"
+            gradient: "from-ctp-mauve to-ctp-peach"
         },
         {
             title: links.ph,
-            gradient: "from-ctp-pink to-ctp-green"
+            gradient: "from-ctp-green to-ctp-blue"
         }
     ],
     links
