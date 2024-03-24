@@ -4,6 +4,13 @@ enum Theme {
     FRAPPE = "ctp-frappe",
 }
 
+interface ContactLink {
+    link: string,
+    gradient: string,
+    label: string,
+    icon: string
+}
+
 interface Role {
     name: string,
     description: string
@@ -35,4 +42,4 @@ interface Experience {
     accent: string,
 }
 
-export { Theme, Role, Skill, Project, Experience }
+export { Theme, Role, Skill, Project, Experience, ContactLink }

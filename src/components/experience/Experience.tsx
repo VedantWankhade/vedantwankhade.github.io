@@ -7,7 +7,7 @@ const Experience = () => (
     <>
         <div className="flex flex-col gap-2">
             <div>
-            <H1 label={experience.title} styles="from-ctp-pink to-ctp-teal animate-slide-right" />
+            <H1 label={experience.title.title} styles={`${experience.title.gradient} animate-slide-right`} />
             </div>
             <div className="flex flex-col gap-4 animate-slide-up">
                 {
@@ -19,10 +19,10 @@ const Experience = () => (
         </div>
         {/* <div><p>Separator</p></div> */}
         <div className="hidden sm:block border-l-2 border-l-ctp-mauve pl-10 md:pl-28 h-min">
-            <p>{experience.sideHeader}</p>
+            <p>{experience.sidebar.header}</p>
            <ul>
             {
-                experience.sideTitles.map(title => (
+                experience.sidebar.titles.map(title => (
                     <li key={title.title}><H2 label={title.title} styles={`${title.gradient} animate-slide-left`}></H2></li>
                 ))
             }

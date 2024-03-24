@@ -7,7 +7,7 @@ const Contributions = () =>  (
     <>
         <div className="flex flex-col gap-2">
             <div>
-                <H1 label={contributions.title} styles="from-ctp-blue to-ctp-yellow animate-slide-right" />
+                <H1 label={contributions.title.title} styles={`${contributions.title.gradient} animate-slide-right`} />
             </div>
             <div className="flex flex-wrap gap-4 animate-slide-up">
                 {/* <ProjectCard borderColor="border-ctp-red" title="tgpt" styles="text-ctp-red" description="llorem ipsumlorem ipsumolorem ipsumrem ipsum" url="https://github.com/vedantwankhade/" image="github" skills={["Go", "Bugfix"]} />
@@ -21,10 +21,10 @@ const Contributions = () =>  (
         </div>
         {/* <div><p>Separator</p></div> */}
         <div className="hidden sm:block border-l-2 border-l-ctp-peach pl-10 md:pl-28 h-min">
-            <p>{contributions.sideHeader}</p>
+            <p>{contributions.sidebar.header}</p>
            <ul>
             {
-                contributions.sideTitles.map(title => (
+                contributions.sidebar.titles.map(title => (
                     <li key={title.title}><H2 label={title.title} styles={`${title.gradient} animate-slide-left`}></H2></li>
                 ))
             }

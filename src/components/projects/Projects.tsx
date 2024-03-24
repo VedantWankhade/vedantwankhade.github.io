@@ -7,7 +7,7 @@ const Projects = () => (
     <>
         <div className="flex flex-col gap-2">
             <div>
-                <H1 label={projects.title} styles="from-ctp-blue to-ctp-red animate-slide-right" />
+                <H1 label={projects.title.title} styles={`${projects.title.gradient} animate-slide-right`} />
             </div>
             <div className="flex flex-wrap gap-4 animate-slide-up">
                 {
@@ -19,10 +19,10 @@ const Projects = () => (
         </div>
         {/* <div><p>Separator</p></div> */}
         <div className="hidden sm:block border-l-2 border-l-ctp-red pl-10 md:pl-28 h-min">
-            <p>{projects.sideHeader}</p>
+            <p>{projects.sidebar.header}</p>
            <ul>
             {
-                projects.sideTitles.map(title => (
+                projects.sidebar.titles.map(title => (
                     <li key={title.title}><H2 label={title.title} styles={`${title.gradient} animate-slide-left`}></H2></li>
                 ))
             }

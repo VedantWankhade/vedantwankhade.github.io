@@ -1,32 +1,61 @@
-import { Experience, Project, Skill } from "./types"
+import { ContactLink, Experience, Project, Skill } from "./types"
 
 const about = {
-    nameHeader: "Hi, my name is",
-    name: "Vedant Wankhade",
-    titleHeader: "I am a",
-    title: "Software Engineer",
+    name: {
+        header: "Hi, my name is",
+        name: "Vedant Wankhade",
+        gradient: "from-ctp-green to-ctp-yellow"
+    },
+    title: {
+        header: "I am a",
+        title: "Software Engineer",
+        gradient: "from-ctp-yellow to-ctp-mauve"
+    },
     intro: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto delectus sunt quidem hic dolorem totam quam odit provident aliquam laudantium accusantium, nihil minus eaque, similique aspernatur, iure dolorum perferendis? Ratione?",
-    photo: "/imgs/me.jpeg",
-    resumeLink: "/"
+    photo: {
+        photo: "/imgs/me.jpeg",
+        gradient: "from-ctp-peach to-ctp-lavender"
+    },
+    contactButton: {
+        label: "Contact Me",
+        gradient: "from-ctp-peach to-ctp-red",
+        icon: "mail"
+    },
+    workButton: {
+        label: "View My Work",
+        gradient: "from-ctp-pink to-ctp-mauve",
+        icon: "code-s-slash"
+    },
+    resumeButton: {
+        label: "My Resume",
+        gradient: "from-ctp-teal to-ctp-green",
+        link: "/",
+        icon: "profile"
+    },
 }
 
 const skills = {
-    title: "What I use",
-    sideHeader: "I love to make",
-    sideTitles: [
-        {
-            title: "Performant backend",
-            gradient: "from-ctp-mauve to-ctp-pink"
-        },
-        {
-            title: "CLI apps",
-            gradient: "from-ctp-pink to-ctp-green"
-        },
-        {
-            title: "Fullstack apps",
-            gradient: "from-ctp-sky to-ctp-red"
-        }
-    ],
+    title: {
+        title: "What I use",
+        gradient: "from-ctp-green to-ctp-teal"
+    },
+    sidebar: {
+        header: "I love to make",
+        titles: [
+            {
+                title: "Performant backend",
+                gradient: "from-ctp-mauve to-ctp-pink"
+            },
+            {
+                title: "CLI apps",
+                gradient: "from-ctp-pink to-ctp-green"
+            },
+            {
+                title: "Fullstack apps",
+                gradient: "from-ctp-sky to-ctp-red"
+            }
+        ],
+    },
     skills: [
         {
             title: "Backend",
@@ -68,22 +97,27 @@ const skills = {
 }
 
 const projects = {
-    title: "What I have made",
-    sideHeader: "I love to make",
-    sideTitles: [
-        {
-            title: "Performant backend",
-            gradient: "from-ctp-mauve to-ctp-pink"
-        },
-        {
-            title: "CLI apps",
-            gradient: "from-ctp-pink to-ctp-green"
-        },
-        {
-            title: "Fullstack apps",
-            gradient: "from-ctp-sky to-ctp-red"
-        }
-    ],
+    title: {
+        title: "What I have made",
+        gradient: "from-ctp-blue to-ctp-red"
+    },
+    sidebar: {
+        header: "I love to make",
+        titles: [
+            {
+                title: "Performant backend",
+                gradient: "from-ctp-mauve to-ctp-pink"
+            },
+            {
+                title: "CLI apps",
+                gradient: "from-ctp-pink to-ctp-green"
+            },
+            {
+                title: "Fullstack apps",
+                gradient: "from-ctp-sky to-ctp-red"
+            }
+        ],  
+    },
     projects: [
         {
             title: "Project 1",
@@ -105,18 +139,23 @@ const projects = {
 }
 
 const contributions = {
-    title: "Contributions",
-    sideHeader: "I have contributed to",
-    sideTitles: [
-        {
-            title: "Open source",
-            gradient: "from-ctp-mauve to-ctp-pink"
-        },
-        {
-            title: "Projects used by millions",
-            gradient: "from-ctp-pink to-ctp-green"
-        }
-    ],
+    title: {
+        title: "Contributions",
+        gradient: "from-ctp-blue to-ctp-yellow"
+    },
+    sidebar: {
+        header: "I have contributed to",
+        titles: [
+            {
+                title: "Open source",
+                gradient: "from-ctp-mauve to-ctp-pink"
+            },
+            {
+                title: "Projects used by millions",
+                gradient: "from-ctp-pink to-ctp-green"
+            }
+        ],
+    },
     contributions: [
         {
             title: "tgpt",
@@ -138,18 +177,23 @@ const contributions = {
 }
 
 const experience = {
-    title: "Experience",
-    sideHeader: "I have worked in",
-    sideTitles: [
-        {
-            title: "Agile",
-            gradient: "from-ctp-mauve to-ctp-pink"
-        },
-        {
-            title: "Fast release cycles",
-            gradient: "from-ctp-pink to-ctp-green"
-        }
-    ],
+    title: {
+        title: "Experience",
+        gradient: "from-ctp-pink to-ctp-teal"
+    },
+    sidebar: {
+        header: "I have worked in",
+        titles: [
+            {
+                title: "Agile",
+                gradient: "from-ctp-mauve to-ctp-pink"
+            },
+            {
+                title: "Fast release cycles",
+                gradient: "from-ctp-pink to-ctp-green"
+            },
+        ],
+    },
     experiences: [
         {
             org: "Cognizant",
@@ -188,27 +232,46 @@ const experience = {
     ] as Experience[]
 }
 
-const links = {
-    email: "vedantwankhade17@gmail.com",
-    linkedin: "https://linkedin.com/in/vedantwankhade/",
-    github: "https://github.com/vedantwankhade/",
-    ph: "(+91) 7620702927"
-}
+const links: ContactLink[] = [
+    {
+        link: "mailto:vedantwankhade17@gmail.com",
+        gradient: "from-ctp-teal to-ctp-green",
+        label: "Email",
+        icon: "mail"
+    },
+    {
+        link: "https://linkedin.com/in/vedantwankhade/",
+        gradient: "from-ctp-peach to-ctp-red",
+        label: "LinkedIn",
+        icon: "linkedin"
+    },
+    {
+        link: "https://github.com/vedantwankhade/",
+        gradient: "from-ctp-pink to-ctp-mauve",
+        label: "GitHub",
+        icon: "github"
+    },
+]
 
 const contact = {
-    title: "Get in touch",
-    sideHeader: "Or, you can also reach me at",
-    sideTitles: [
-        {
-            title: links.email,
-            gradient: "from-ctp-mauve to-ctp-peach"
-        },
-        {
-            title: links.ph,
-            gradient: "from-ctp-green to-ctp-blue"
-        }
-    ],
-    links
+    title: {
+        title: "Get in touch",
+        gradient: "from-ctp-mauve to-ctp-red"
+    },
+    sidebar: {
+        header: "Or, you can also reach me at",
+        titles: [
+            {
+                title: "vedantwankhade17@gmail.com",
+                gradient: "from-ctp-mauve to-ctp-peach"
+            },
+            {
+                title: "(+91) 7620702927",
+                gradient: "from-ctp-green to-ctp-blue"
+            }
+        ],
+    },
+    links 
 }
 
 export {
