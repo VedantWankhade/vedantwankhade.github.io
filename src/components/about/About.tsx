@@ -34,7 +34,7 @@ const About = () => {
                             <p className={readMore ? '' : 'hidden'} key={intro}>{intro}</p>
                         ))
                     }
-                    <p onClick={() => toggleReadMore(readMore)} className="text-ctp-peach hover:underline hover:cursor-pointer">{readMore ? 'Collapse...' : 'Want to know more...'} <i className={`corner-right-${readMore ? 'down' : 'up'}`}></i></p>
+                    <p onClick={() => toggleReadMore(readMore)} className='text-ctp-peach hover:cursor-pointer'><span className="hover:underline">{readMore ? 'Collapse...' : 'Want to know more...'}</span><i className={`ri-corner-right-${readMore ? 'up' : 'down'}-fill hover:no-underline`}></i></p>
                 </div>
                 <div className="mt-2 flex flex-wrap gap-x gap-y-4 animate-slide-up">
                     <Link to={'/contact'}><Button label={about.contactButton.label} styles={about.contactButton.gradient} icon={about.contactButton.icon} /></Link>

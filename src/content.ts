@@ -53,35 +53,35 @@ const about = {
 const skills = {
     title: {
         title: "What I use",
-        gradient: "from-ctp-green to-ctp-teal"
+        gradient: "from-ctp-green to-ctp-yellow"
     },
     sidebar: {
-        header: "I love to make",
+        header: "I can work with",
         titles: [
             {
-                title: "Performant backend",
+                title: "Backends",
                 gradient: "from-ctp-mauve to-ctp-pink"
             },
             {
-                title: "CLI apps",
-                gradient: "from-ctp-pink to-ctp-green"
+                title: "Frontends",
+                gradient: "from-ctp-peach to-ctp-rosewater"
             },
             {
-                title: "Fullstack apps",
+                title: "Databases",
                 gradient: "from-ctp-sky to-ctp-red"
-            }
+            },
         ],
     },
     skills: [
         {
             title: "Backend",
-            skills: ["Go", "Java"],
+            skills: ["Go", "Java", "NodeJS", "Python", "Spring Boot", "GoFibre", "ExpressJS"],
             image: "server",
             accent: "blue",
         },
         {
             title: "Frontend",
-            skills: ["TypeScript", "React", "TailwindCSS"],
+            skills: ["JavaScript/TypeScript", "React", "TailwindCSS"],
             image: "smartphone",
             accent: "red",
         },
@@ -93,15 +93,21 @@ const skills = {
         },
         {
             title: "Patterns",
-            skills: ["REST", "gRPC", "json-rpc", "GraphQL"],
+            skills: ["Microservice", "REST", "gRPC", "json-rpc", "GraphQL", "OAuth", "JWT"],
             image: "git-branch",
             accent: "pink",
         },
         {
             title: "Tools",
-            skills: ["Git"],
+            skills: ["Git", "Docker", "Postman"],
             image: "hammer",
             accent: "peach",
+        },
+        {
+            title: "Automation",
+            skills: ["Bash", "Playwright"],
+            image: "robot-2",
+            accent: "mauve",
         },
         {
             title: "Other",
@@ -129,26 +135,46 @@ const projects = {
                 gradient: "from-ctp-pink to-ctp-green"
             },
             {
-                title: "Fullstack apps",
+                title: "Pretty frontend",
                 gradient: "from-ctp-sky to-ctp-red"
+            },
+            {
+                title: "IDE Plugins",
+                gradient: "from-ctp-red to-ctp-peach"
             }
         ],  
     },
     projects: [
         {
-            title: "Project 1",
-            skills: ["Go", "Java"],
+            title: "ghmail",
+            skills: ["Java", "Spring Boot", "GitHub OAuth"],
             image: "github",
             accent: "blue",
-            description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+            description: "An email app with GitHub authentication, where users can send messages using GitHub useranames.",
             url: "https://github.com/vedantwankhade/",
         },
         {
-            title: "Project 2",
+            title: "Portfolio Website",
             skills: ["React", "Tailwind"],
             image: "github",
-            accent: "peach",
-            description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+            accent: "red",
+            description: "This website.",
+            url: "https://github.com/vedantwankhade/",
+        },
+        {
+            title: "URL Shorter",
+            skills: ["HTML", "CSS", "NodeJS", "ExpressJS", "JavaScript"],
+            image: "github",
+            accent: "mauve",
+            description: "A simple URL shortener.",
+            url: "https://github.com/vedantwankhade/",
+        },
+        {
+            title: "Issue Tracker",
+            skills: ["MongoDB", "ExpressJS", "JavaScript", "React", "NodeJS"],
+            image: "github",
+            accent: "yellow",
+            description: "A simple issue tracker.",
             url: "https://github.com/vedantwankhade/",
         },
     ] as Project[]
@@ -178,7 +204,7 @@ const contributions = {
             skills: ["Go", "CLI", "AI"],
             image: "github",
             accent: "blue",
-            description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+            description: "tgpt is a cli tool that lets you communicate with a generative AI model from your terminal. I fixed an issue with piping an output from stdin to the command line.",
             url: "https://github.com/vedantwankhade/",
         },
         {
@@ -186,7 +212,15 @@ const contributions = {
             skills: ["QML", "QT", "Linux"],
             image: "github",
             accent: "peach",
-            description: "lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum",
+            description: "Desktop environment used by millions. I fixed an issue with the app store where I fixed layout issue.",
+            url: "https://github.com/vedantwankhade/",
+        },
+        {
+            title: "Nix/NixOS",
+            skills: ["React", "Astro"],
+            image: "github",
+            accent: "lavender",
+            description: "Implemented a feature on the website where a user will be automatically moved to the correct download section.",
             url: "https://github.com/vedantwankhade/",
         },
     ] as Project[]
@@ -221,30 +255,30 @@ const experience = {
                     name: "Junior Software Engineer",
                     description: "Did some stuff",
                     year: "2024",
-                    skills: ["Go", "Java", "Linux", "Tmux", "NixOS"]
+                    skills: ["Java", "Spring Boot", "AWS", "PostgressQL", "React", "AEM"]
                 },
                 {
                     name: "Intern",
                     description: "Did some stuffDid some stuffDid some stuffDid some stuff",
                     year: "2021",
-                    skills: ["Go", "Java"]
+                    skills: ["Java", "Spring Boot", "Angular", "MySQL"]
                 }
             ]
         },
-        {
-            org: "PRMITR",
-            // current: true,
-            accent: "red",
-            image: "graduation-cap",
-            roles: [
-                {
-                    name: "Studenbt",
-                    description: "Did nothing",
-                    year: "2024",
-                    skills: ["Go", "Java", "Linux", "Tmux", "NixOS"]
-                },
-            ]
-        }
+        // {
+        //     org: "PRMITR",
+        //     // current: true,
+        //     accent: "red",
+        //     image: "graduation-cap",
+        //     roles: [
+        //         {
+        //             name: "Studenbt",
+        //             description: "Did nothing",
+        //             year: "2024",
+        //             skills: ["Go", "Java", "Linux", "Tmux", "NixOS"]
+        //         },
+        //     ]
+        // }
     ] as Experience[]
 }
 
