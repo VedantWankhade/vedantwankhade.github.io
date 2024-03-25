@@ -15,7 +15,7 @@ const About = () => (
                 <p>{about.title.header}</p>
                 <H1 label={about.title.title} styles={`${about.title.gradient} animate-slide-right`} />
             </div>
-            <div className="max-w-sm sm:max-w-xl">
+            <div className="sm:max-w-xl">
                 {
                     about.intro.map(intro => (
                         <p key={intro}>{intro}</p>
