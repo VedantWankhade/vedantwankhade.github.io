@@ -11,7 +11,18 @@ const about = {
         title: "Software Engineer",
         gradient: "from-ctp-yellow to-ctp-mauve"
     },
-    intro: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto delectus sunt quidem hic dolorem totam quam odit provident aliquam laudantium accusantium, nihil minus eaque, similique aspernatur, iure dolorum perferendis? Ratione?",
+    // each string in the intro array will result in a new paragraph
+    intro: [`
+            with 2 years of experience working in an agile team.
+            I have worked closely with the business stakeholders to deliver scalable products in a really fast release cycle.
+            As a polygot programmer, I am proficient in multiple programming languages such as Go, Java, TypeScript/JavaScript,
+            and can leverage frameworks like React, Express, Spring Boot, GoFibre etc.
+        `,
+        `
+            I also have experience working with microservice with RESTful and gRPC patterns.
+            I have a deep knowledge of working linux systems, hence cloud and containerization concepts comes naturally to me.
+        `
+    ],
     photo: {
         photo: "/imgs/me.jpeg",
         gradient: "from-ctp-peach to-ctp-lavender"
