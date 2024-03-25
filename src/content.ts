@@ -19,8 +19,13 @@ const about = {
             and can leverage frameworks like React, Express, Spring Boot, GoFibre etc.
         `,
         `
-            I also have experience working with microservice with RESTful and gRPC patterns.
+            I also have experience working large-scale codebases with microservice with RESTful architecture.
+            Other than these mainstream patterns I am also familiar with patterns like gRPC, json-RPC and GraphQL.
             I have a deep knowledge of working linux systems, hence cloud and containerization concepts comes naturally to me.
+        `,
+        `
+            I also like to optimize my devoper workflow, by working in a tilling window manager and it also leads me to looking at
+            lots of low level code and creating some usefull cli utilities and deamons that interact with my system.
         `
     ],
     photo: {
