@@ -39,15 +39,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           {/* <div className="hidden sm:block">
             <p className="text-2xl font-maple"> you@github.io# ~ /<span>vedant</span><span>wankhade</span></p>
           </div> */}
-          <div className={`${slideMenuFlag} z-10 bg-ctp-mantle animate-slide-left right-0 p-4 bottom-0 w-16 h-screen fixed translate-x-0`}>
+          <div className={`${slideMenuFlag} z-10 bg-ctp-mantle animate-slide-left right-0 p-4 bottom-0 w-1/4 h-screen fixed translate-x-0`}>
             <ul className="flex flex-col gap-4 p-1">
               <button><i onClick={() => toggleMenu(menuIcon, slideMenuFlag)} className={`ri-${menuIcon}-fill text-3xl`}></i></button>
-                <li><Link to="/"><i className={`ri-user-fill text-3xl`}></i></Link></li>
-                <li><Link to="/skills"><i className={`ri-tools-fill text-3xl`}></i></Link></li>
-                <li><Link to="/projects"><i className={`ri-code-s-slash-fill text-3xl`}></i></Link></li>
-                <li><Link to="/experience"><i className={`ri-suitcase-fill text-3xl`}></i></Link></li>
-                <li><Link to="/contributions"><i className={`ri-service-fill text-3xl`}></i></Link></li>
-                <li><Link to="/contact"><i className={`ri-mail-fill text-3xl`}></i></Link></li>
+                <li><Link className="flex flex-col items-center" to="/"><i className={`ri-user-fill text-3xl`}></i><p className="text-sm">About</p></Link></li>
+                <li><Link className="flex flex-col items-center" to="/skills"><i className={`ri-tools-fill text-3xl`}></i><p className="text-sm">Skills</p></Link></li>
+                <li><Link className="flex flex-col items-center" to="/projects"><i className={`ri-code-s-slash-fill text-3xl`}></i><p className="text-sm">Projects</p></Link></li>
+                <li><Link className="flex flex-col items-center" to="/experience"><i className={`ri-suitcase-fill text-3xl`}></i><p className="text-sm">Experience</p></Link></li>
+                <li><Link className="flex flex-col items-center" to="/contributions"><i className={`ri-service-fill text-3xl`}></i><p className="text-sm">Contributions</p></Link></li>
+                <li><Link className="flex flex-col items-center" to="/contact"><i className={`ri-mail-fill text-3xl`}></i><p className="text-sm">Contact</p></Link></li>
             </ul>
           </div>
           <main className="py-6 px-6 lg:px-16 xl:px-80 flex justify-center sm:justify-between gap-6">
