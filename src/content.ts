@@ -13,19 +13,22 @@ const about = {
     },
     // each string in the intro array will result in a new paragraph
     intro: [`
-            with 2 years of experience working in an agile team.
-            I have worked closely with the business stakeholders to deliver scalable products in a really fast release cycle.
-            As a polygot programmer, I am proficient in multiple programming languages such as Go, Java, TypeScript/JavaScript,
-            and can leverage frameworks like React, Express, Spring Boot, GoFibre etc.
+            with 2 years of experience collaborating in agile teams. My focus has been on delivering scalable backend
+            and frontend products within rapid release cycles,
+            closely engaging with business stakeholders throughout the development process
+            and taking responsibility of the code.
+            As a polyglot programmer, I am proficient in various languages including Go, Java, TypeScript/JavaScript,
+            and adeptly utilize frameworks such as React, Express, Spring Boot, and GoFibre.
         `,
         `
-            I also have experience working large-scale codebases with microservice with RESTful architecture.
-            Other than these mainstream patterns I am also familiar with patterns like gRPC, json-RPC and GraphQL.
-            I have a deep knowledge of working linux systems, hence cloud and containerization concepts comes naturally to me.
+            My expertise extends to working on large-scale codebases, with microservices and RESTful architecture.
+            Beyond conventional patterns, I have also worked with gRPC, JSON-RPC, and GraphQL.
+            Being proficient in Linux systems, I naturally grasp cloud and containerization concepts.
         `,
         `
-            I also like to optimize my devoper workflow, by working in a tilling window manager and it also leads me to looking at
-            lots of low level code and creating some usefull cli utilities and deamons that interact with my system.
+            I am really passionate about optimizing my developer workflow,
+            working in a tiling window manager directs me to use terminal for majority of tasks
+            and looking at lots of low level code and configuration.
         `
     ],
     photo: {
