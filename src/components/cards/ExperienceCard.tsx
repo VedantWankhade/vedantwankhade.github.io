@@ -13,7 +13,7 @@ interface ExperienceCardProps {
 
 const ProjectCard: React.FC<ExperienceCardProps> = (props) => {
     return (
-        <div className="bg-ctp-mantle w-full drop-shadow-xl rounded-lg p-2 w gap-4 flex flex-col">
+        <div className="bg-ctp-mantle w-full drop-shadow-xl rounded-lg p-2 gap-4 flex flex-col">
             <div className="flex justify-between">
                 <H3 label={props.org} styles={props.styles}></H3>
                 <div>
@@ -25,9 +25,12 @@ const ProjectCard: React.FC<ExperienceCardProps> = (props) => {
                 {props.roles.map(role => (
                     <div key={role.name+'@'+props.org}>
                         <div className="mt-2" >
+                            <div className="flex justify-between">
                             <H4 label={role.name} styles={props.styles}></H4>
+                            <p className={props.styles}>{role.year}</p>
+                            </div>
+
                             <p>{role.description}</p>
-                            <p>{role.year}</p>
                         </div>
                         {/* <div>
                             <ul className="flex flex-wrap gap-3">

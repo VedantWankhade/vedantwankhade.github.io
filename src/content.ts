@@ -13,12 +13,12 @@ const about = {
     },
     // each string in the intro array will result in a new paragraph
     intro: [`
-            with 2 years of experience collaborating in agile teams. My focus has been on delivering scalable backend
+            with 2 years of experience working in agile teams. My focus has been on delivering scalable backend
             and frontend products within rapid release cycles,
             closely engaging with business stakeholders throughout the development process
             and taking responsibility of the code.
             As a polyglot programmer, I am proficient in various languages including Go, Java, TypeScript/JavaScript,
-            and adeptly utilize frameworks such as React, Express, Spring Boot, and GoFibre.
+            and use frameworks such as React, Express, Spring Boot, and GoFibre.
         `,
         `
             My expertise extends to working on large-scale codebases, with microservices and RESTful architecture.
@@ -62,11 +62,11 @@ const skills = {
         header: "I can work with",
         titles: [
             {
-                title: "Backends",
+                title: "Backend",
                 gradient: "from-ctp-mauve to-ctp-pink"
             },
             {
-                title: "Frontends",
+                title: "Frontend",
                 gradient: "from-ctp-peach to-ctp-rosewater"
             },
             {
@@ -127,19 +127,19 @@ const projects = {
         gradient: "from-ctp-blue to-ctp-red"
     },
     sidebar: {
-        header: "I love to make",
+        header: "I make",
         titles: [
             {
-                title: "Performant backend",
+                title: "Scalable backend",
                 gradient: "from-ctp-mauve to-ctp-pink"
-            },
-            {
-                title: "CLI apps",
-                gradient: "from-ctp-pink to-ctp-green"
             },
             {
                 title: "Pretty frontend",
                 gradient: "from-ctp-sky to-ctp-red"
+            },
+            {
+                title: "CLI apps",
+                gradient: "from-ctp-pink to-ctp-green"
             },
             {
                 title: "IDE Plugins",
@@ -150,35 +150,35 @@ const projects = {
     projects: [
         {
             title: "ghmail",
-            skills: ["Java", "Spring Boot", "GitHub OAuth"],
+            skills: ["Java", "Spring Boot", "GitHub OAuth", "CassandraDB"],
             image: "github",
             accent: "blue",
-            description: "An email app with GitHub authentication, where users can send messages using GitHub useranames.",
-            url: "https://github.com/vedantwankhade/",
+            description: "A messaging app with GitHub authentication, where users can send messages using GitHub useranames.",
+            url: "https://github.com/VedantWankhade/ghmail",
         },
         {
             title: "Portfolio Website",
-            skills: ["React", "Tailwind"],
+            skills: ["TypeScript", "React", "Tailwind"],
             image: "github",
             accent: "red",
             description: "This website.",
-            url: "https://github.com/vedantwankhade/",
+            url: "https://github.com/VedantWankhade/vedantwankhade.github.io",
         },
         {
-            title: "URL Shorter",
-            skills: ["HTML", "CSS", "NodeJS", "ExpressJS", "JavaScript"],
+            title: "URL Shortner",
+            skills: ["React", "NodeJS", "ExpressJS", "MongoDB"],
             image: "github",
             accent: "mauve",
             description: "A simple URL shortener.",
-            url: "https://github.com/vedantwankhade/",
+            url: "https://github.com/VedantWankhade/url-shortener",
         },
         {
             title: "Issue Tracker",
-            skills: ["MongoDB", "ExpressJS", "JavaScript", "React", "NodeJS"],
+            skills: ["React", "NodeJS", "ExpressJS", "MongoDB"],
             image: "github",
             accent: "yellow",
             description: "A simple issue tracker.",
-            url: "https://github.com/vedantwankhade/",
+            url: "https://github.com/VedantWankhade/astora-issue-tracker",
         },
     ] as Project[]
 }
@@ -207,7 +207,7 @@ const contributions = {
             skills: ["Go", "CLI", "AI"],
             image: "github",
             accent: "blue",
-            description: "tgpt is a cli tool that lets you communicate with a generative AI model from your terminal. I fixed an issue with piping an output from stdin to the command line.",
+            description: "tgpt is a cli tool that lets you communicate with a generative AI model from your terminal. I fixed an issue with piping an output from stdout to the command line.",
             url: "https://github.com/vedantwankhade/",
         },
         {
@@ -215,7 +215,7 @@ const contributions = {
             skills: ["QML", "QT", "Linux"],
             image: "github",
             accent: "peach",
-            description: "Desktop environment used by millions. I fixed an issue with the app store where I fixed layout issue.",
+            description: "Desktop environment used by millions. I fixed a layout issue bug in the app store.",
             url: "https://github.com/vedantwankhade/",
         },
         {
@@ -223,7 +223,7 @@ const contributions = {
             skills: ["React", "Astro"],
             image: "github",
             accent: "lavender",
-            description: "Implemented a feature on the website where a user will be automatically moved to the correct download section.",
+            description: "Implemented a feature on the website where a user will be automatically moved to the correct download section depending on their oparating system.",
             url: "https://github.com/vedantwankhade/",
         },
     ] as Project[]
@@ -256,14 +256,23 @@ const experience = {
             roles: [
                 {
                     name: "Junior Software Engineer",
-                    description: "Did some stuff",
-                    year: "2024",
+                    description: `
+                        I worked for a banking client.
+                        Initially I worked exclusively with React, writing some AEM components for the bank's website.
+                        Later on I moved on to a more challanging role, where I got to work with the backend service for the bank's forms.
+                        I contributed to a lot of the web services written in Go and Java.
+                        Contributed to 18+ backend and frontend production releases.
+                    `,
+                    year: "2022 - current",
                     skills: ["Java", "Spring Boot", "AWS", "PostgressQL", "React", "AEM"]
                 },
                 {
                     name: "Intern",
-                    description: "Did some stuffDid some stuffDid some stuffDid some stuff",
-                    year: "2021",
+                    description: `
+                        As fullstack developer intern, I was trained on Java, Spring Boot, Angular, MySQL and AWS. I implemented 
+                        microservice patterns using load balancers.
+                    `,
+                    year: "2021 - 2022",
                     skills: ["Java", "Spring Boot", "Angular", "MySQL"]
                 }
             ]
@@ -312,7 +321,7 @@ const contact = {
         gradient: "from-ctp-mauve to-ctp-red"
     },
     sidebar: {
-        header: "Or, you can also reach me at",
+        header: "Or, you can also reach me on",
         titles: [
             {
                 title: "vedantwankhade17@gmail.com",
