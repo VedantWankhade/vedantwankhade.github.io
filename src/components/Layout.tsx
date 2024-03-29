@@ -39,7 +39,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           {/* <div className="hidden sm:block">
             <p className="text-2xl font-maple"> you@github.io# ~ /<span>vedant</span><span>wankhade</span></p>
           </div> */}
-          <div className={`${slideMenuFlag} z-10 bg-ctp-mantle animate-slide-left right-0 p-4 bottom-0 w-1/4 h-screen fixed translate-x-0`}>
+          <div className={`${slideMenuFlag} z-10 bg-ctp-base animate-slide-left right-0 p-4 bottom-0 w-1/4 h-screen fixed translate-x-0`}>
             <ul className="flex flex-col gap-4 p-1">
               <button><i onClick={() => toggleMenu(menuIcon, slideMenuFlag)} className={`ri-${menuIcon}-fill text-3xl`}></i></button>
                 <li><Link className="flex flex-col items-center" to="/"><i className={`ri-user-fill text-3xl`}></i><p className="text-sm">About</p></Link></li>
