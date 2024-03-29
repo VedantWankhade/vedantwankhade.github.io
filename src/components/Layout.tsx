@@ -33,7 +33,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   };
 
   return <div className={`text-lg font-inter min-h-screen container flex flex-col justify-between max-w-full m-0 bg-ctp-base text-ctp-text ${theme}`}>
-          <header className="p-6 bg-ctp-mantle animate-slide-down sticky top-0 z-10">
+          <header className="p-6 bg-ctp-base animate-slide-down sticky top-0 z-10">
             <Navbar cycleTheme={cycleTheme} theme={theme} toggleMenu={toggleMenu} menuIcon={menuIcon} slideMenuFlag={slideMenuFlag} />
           </header>
           {/* <div className="hidden sm:block">
@@ -53,8 +53,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <main className="py-6 px-6 lg:px-16 xl:px-80 flex justify-center sm:justify-between gap-6">
             { children }
           </main>
-          <footer className="p-6 bg-ctp-mantle flex justify-between">
-            <p>&copy; 2024 Vedant Wankhade</p>
+          <footer className="p-6 bg-ctp-base flex justify-between">
+            <p></p>
+            {/* <p>&copy; 2024 Vedant Wankhade</p> */}
             <a href="https://github.com/vedantwankhade/vedantwankhade.github.io" target="_blank"><i className={`ri-github-fill text-3xl`}></i></a>
           </footer>
         </div>
