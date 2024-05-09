@@ -29,8 +29,18 @@ const ProjectCard: React.FC<ExperienceCardProps> = (props) => {
                             <H4 label={role.name} styles={props.styles}></H4>
                             <p className={props.styles}>{role.year}</p>
                             </div>
-
-                            <p>{role.description}</p>
+                            <div>
+                                {/* role.description.map is not working for some reason */}
+                                {
+                                    (() => {
+                                    const li: JSX.Element[] = [];
+                                    for (let i = 0; i < role.description.length; i++) {
+                                        li.push(<li key={i}>{role.description[i]}</li>);
+                                    }
+                                    return li;
+                                    })()
+                                }
+                            </div>
                         </div>
                         {/* <div>
                             <ul className="flex flex-wrap gap-3">

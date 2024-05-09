@@ -13,7 +13,7 @@ interface ContactLink {
 
 interface Role {
     name: string,
-    description: string
+    description: string[]
     year: string,
     skills: string[]
 }

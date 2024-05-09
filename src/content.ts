@@ -149,6 +149,14 @@ const projects = {
     },
     projects: [
         {
+            title: "fuzzygit",
+            skills: ["Go", "REST", "Bubbletea"],
+            image: "github",
+            accent: "green",
+            description: `A TUI application written in pure Go that lets users interact with git in a visual and "fuzzy" way`,
+            url: "https://github.com/VedantWankhade/fuzzygit",
+        },
+        {
             title: "ghmail",
             skills: ["Java", "Spring Boot", "GitHub OAuth", "CassandraDB"],
             image: "github",
@@ -165,20 +173,20 @@ const projects = {
             url: "https://github.com/VedantWankhade/vedantwankhade.github.io",
         },
         {
+            title: "JANTA",
+            skills: ["React", "React Native", "MongoDB", "Electron", "GraphQL"],
+            image: "github",
+            accent: "rosewater",
+            description: `A multiplatforn note-taking app.`,
+            url: "https://github.com/VedantWankhade/janta",
+        },
+        {
             title: "URL Shortner",
             skills: ["React", "NodeJS", "ExpressJS", "MongoDB"],
             image: "github",
             accent: "mauve",
             description: "A simple URL shortener.",
             url: "https://github.com/VedantWankhade/url-shortener",
-        },
-        {
-            title: "Issue Tracker",
-            skills: ["React", "NodeJS", "ExpressJS", "MongoDB"],
-            image: "github",
-            accent: "yellow",
-            description: "A simple issue tracker.",
-            url: "https://github.com/VedantWankhade/astora-issue-tracker",
         },
     ] as Project[]
 }
@@ -250,29 +258,37 @@ const experience = {
     experiences: [
         {
             org: "Cognizant",
-            current: true,
+            current: false, // fix the styles and placement - until then false
             accent: "blue",
             image: "building",
             roles: [
                 {
                     name: "Junior Software Engineer",
-                    description: `
-                        I worked for a banking client.
-                        Initially I worked exclusively with React, writing some AEM components for the bank's website.
-                        Later on I moved on to a more challanging role, where I got to work with the backend service for the bank's forms.
-                        I contributed to a lot of the web services written in Go and Java.
-                        Contributed to 18+ backend and frontend production releases.
-                    `,
-                    year: "2022 - current",
+                    description: [
+                    `Worked for one of the 'Big 4' Australian banking clients, in an agile team with a fast release cycle`,
+                    `Collaborated closely with the business stakeholders to develop responsive and ready to use AEM UI
+                    components in ReactJS`,
+                    `Wrote unit tested web services in Spring Boot interfacing with MSSQL database, cron-jobs and
+                    third party APIs`,
+                    `Increased the coverage of end to end regression automation tests from 20% to 100% resulting in a
+                    total reduction of manual regression testing; liberating testers to concentrate on progression testing`,
+                    `Proposed and developed a solution that automates the AEM content authoring for testing which
+                    reduced testing efforts significantly`,
+                    `Successfully delivered on 20+ production releases`,
+                    `Worked on an internal project for the Engineering COE team where I developed a tool from scratch to
+                    generate TSR from JIRA cards and Fix Versions`,
+                    ],
+                    year: "Aug 2022 - Present",
                     skills: ["Java", "Spring Boot", "AWS", "PostgressQL", "React", "AEM"]
                 },
                 {
                     name: "Intern",
-                    description: `
-                        As fullstack developer intern, I was trained on Java, Spring Boot, Angular, MySQL and AWS. I implemented 
-                        microservice patterns using load balancers.
-                    `,
-                    year: "2021 - 2022",
+                    description: [
+                        `Was trained in Spring Boot, AWS, Docker, PLSQL, Microservices etc.`,
+                        `Lead the team in designing and developing a full-stack, microservices based capstone project with user
+authentication, load balancing`
+                    ],
+                    year: "Jan 2022 - Jul 2022",
                     skills: ["Java", "Spring Boot", "Angular", "MySQL"]
                 }
             ]
