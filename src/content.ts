@@ -318,7 +318,7 @@ const links: ContactLink[] = [
         icon: "mail"
     },
     {
-        link: "https://linkedin.com/in/vedantwankhade/",
+        link: "https://linkedin.com/in/vedant-wankhade/",
         gradient: "from-ctp-peach to-ctp-red",
         label: "LinkedIn",
         icon: "linkedin"
