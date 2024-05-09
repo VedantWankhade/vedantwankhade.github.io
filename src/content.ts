@@ -48,7 +48,7 @@ const about = {
     resumeButton: {
         label: "My Resume",
         gradient: "from-ctp-teal to-ctp-green",
-        link: "/",
+        link: "https://drive.google.com/file/d/1rf0lg2ikPcn9u0QI7-8rrkEK06FUDueh/view?usp=sharing",
         icon: "profile"
     },
 }
