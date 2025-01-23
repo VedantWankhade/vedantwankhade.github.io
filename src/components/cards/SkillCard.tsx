@@ -10,7 +10,7 @@ interface SkillCardProps {
 
 const SkillCard: React.FC<SkillCardProps> = (props) => {
     return (
-        <div className="bg-ctp-mantle w-full drop-shadow-xl rounded-lg p-2 sm:w-64 gap-4 flex flex-col">
+        <div className="bg-ctp-crust w-full drop-shadow-xl rounded-lg p-2 sm:w-64 gap-4 flex flex-col">
             <div className="flex justify-between">
                 <H3 label={props.title} styles={props.styles}></H3>
                 <div>

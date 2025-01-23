@@ -78,13 +78,13 @@ const skills = {
     skills: [
         {
             title: "Backend",
-            skills: ["Go", "Java", "NodeJS", "Python", "Spring Boot", "GoFibre", "ExpressJS"],
+            skills: ["Go", "Java", "NodeJS", "Spring", "GoFibre", "ExpressJS"],
             image: "server",
             accent: "blue",
         },
         {
             title: "Frontend",
-            skills: ["JavaScript/TypeScript", "React", "TailwindCSS"],
+            skills: ["JavaScript/TypeScript", "Vue", "React", "TailwindCSS"],
             image: "smartphone",
             accent: "red",
         },
@@ -95,8 +95,8 @@ const skills = {
             accent: "green",
         },
         {
-            title: "Patterns",
-            skills: ["Microservice", "REST", "gRPC", "json-rpc", "GraphQL", "OAuth", "JWT"],
+            title: "Patterns / Protocols",
+            skills: ["Microservice", "REST", "gRPC", "GraphQL", "OAuth", "JWT"],
             image: "git-branch",
             accent: "pink",
         },
@@ -149,6 +149,22 @@ const projects = {
     },
     projects: [
         {
+            title: "vscode-cses",
+            skills: ["TypeScript", "REST", "VSCode API"],
+            image: "github",
+            accent: "yellow",
+            description: `A VSCode extension to solve and submit all of the CSES problem set from comfort of your editor`,
+            url: "https://github.com/VedantWankhade/vscode-cses",
+        },
+        {
+            title: "tsrgen",
+            skills: ["Go", "gRPC", "REST", "VueJS", "PostgresQL", "Docker"],
+            image: "github",
+            accent: "lavender",
+            description: `A microservice based application that helps release stakeholders to generate Test Summary Report based on a simple JQL query`,
+            url: "https://github.com/VedantWankhade/tsrgen",
+        },
+        {
             title: "fuzzygit",
             skills: ["Go", "REST", "Bubbletea"],
             image: "github",
@@ -161,7 +177,7 @@ const projects = {
             skills: ["Java", "Spring Boot", "GitHub OAuth", "CassandraDB"],
             image: "github",
             accent: "blue",
-            description: "A messaging app with GitHub authentication, where users can send messages using GitHub useranames.",
+            description: "A messaging app with GitHub authentication, where users can send messages using GitHub usernames",
             url: "https://github.com/VedantWankhade/ghmail",
         },
         {
@@ -169,7 +185,7 @@ const projects = {
             skills: ["TypeScript", "React", "Tailwind"],
             image: "github",
             accent: "red",
-            description: "This website.",
+            description: "This website",
             url: "https://github.com/VedantWankhade/vedantwankhade.github.io",
         },
         {
@@ -185,7 +201,7 @@ const projects = {
             skills: ["React", "NodeJS", "ExpressJS", "MongoDB"],
             image: "github",
             accent: "mauve",
-            description: "A simple URL shortener.",
+            description: "A simple URL shortener",
             url: "https://github.com/VedantWankhade/url-shortener",
         },
     ] as Project[]
@@ -216,15 +232,15 @@ const contributions = {
             image: "github",
             accent: "blue",
             description: "tgpt is a cli tool that lets you communicate with a generative AI model from your terminal. I fixed an issue with piping an output from stdout to the command line.",
-            url: "https://github.com/vedantwankhade/",
+            url: "https://github.com/aandrew-me/tgpt/pull/242",
         },
         {
             title: "KDE Plasma",
             skills: ["QML", "QT", "Linux"],
             image: "github",
             accent: "peach",
-            description: "Desktop environment used by millions. I fixed a layout issue bug in the app store.",
-            url: "https://github.com/vedantwankhade/",
+            description: "Desktop environment used by millions (thanks to Steam Deck). I fixed a layout bug in one of the core apps - Discover.",
+            url: "https://invent.kde.org/plasma/discover/-/merge_requests/373",
         },
         {
             title: "Nix/NixOS",
@@ -232,7 +248,7 @@ const contributions = {
             image: "github",
             accent: "lavender",
             description: "Implemented a feature on the website where a user will be automatically moved to the correct download section depending on their oparating system.",
-            url: "https://github.com/vedantwankhade/",
+            url: "https://github.com/NixOS/nixos-homepage/pull/1368",
         },
     ] as Project[]
 }

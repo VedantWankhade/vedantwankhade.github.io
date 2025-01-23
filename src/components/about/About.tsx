@@ -8,7 +8,7 @@ import { useState } from 'react'
 const About = () => {
 
     const [ readMore, setReadMore ] = useState(false);
-    const toggleReadMore = (rm: Boolean) => {
+    const toggleReadMore = (rm: boolean) => {
         setReadMore(!rm)
     }
 

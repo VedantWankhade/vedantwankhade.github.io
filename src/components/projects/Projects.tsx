@@ -7,7 +7,7 @@ const Projects = () => (
     <>
         <div className="flex flex-col gap-2">
             <div>
-                <H1 label={projects.title.title} styles={`${projects.title.gradient} animate-slide-right`} />
+                <H1 label={projects.title.title} styles={`${projects.title.gradient} animate-slide-right mb-6`} />
             </div>
             <div className="flex flex-wrap gap-4 animate-slide-up">
                 {
